@@ -3,7 +3,11 @@ import requests
 import os
 
 # get authorization token (stored for safety as an environmental variable)
+# set up your variable exactly like this in your .bashrc file: export BITLY_TOKEN="Bearer [your token here]"
+# os is a built-in module in Python. You don't need to install it
+
 token = os.environ['BITLY_TOKEN']
+
 
 # ask user for the url they want to shorten
 long_url = input("Input long URL: ")
